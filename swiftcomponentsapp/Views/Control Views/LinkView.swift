@@ -9,7 +9,18 @@ import SwiftUI
 
 struct LinkView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Link View")
+            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            .padding()
+            .bold()
+        
+        HStack{
+            Image(systemName: "globe")
+            
+            Link("View My Portfolio",
+                  destination: URL(string: "https://oviematthew.com/")!)
+            .foregroundColor(.black)
+        } 
     }
 }
 

@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct ToggleView: View {
+    @State var toggleState: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Toggle View")
+            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            .padding()
+            .bold()
+        
+        Toggle("Switch", isOn: $toggleState)
+            .padding()
+            .tint(.black)
+            .frame(width: 300)
     }
 }
 

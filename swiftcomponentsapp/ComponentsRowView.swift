@@ -14,7 +14,7 @@ struct ComponentsRowView: View {
     var body: some View {
             HStack {
                 Image(systemName: component.icon)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.blue)
                 
                 Text(component.name)
             }

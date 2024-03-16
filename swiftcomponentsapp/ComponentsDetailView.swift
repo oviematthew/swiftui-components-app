@@ -22,13 +22,13 @@ struct ComponentsDetailView: View {
                 ToolbarItem(placement: .principal) {
                     Text(component.name)
                         .font(.headline)
-                        .foregroundColor(.primary)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         openDocumentation()
                     }) {
                         Image(systemName: "doc.fill")
+                            .foregroundColor(.blue)
                     }
                 }
             }

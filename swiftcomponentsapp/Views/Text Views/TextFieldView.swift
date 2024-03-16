@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct TextFieldView: View {
+    @State private var username: String = ""
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("TextField View")
+            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            .padding()
+            .bold()
+        
+        VStack{
+            
+            TextField(
+                "Username",
+                text: $username
+            )
+            .disableAutocorrection(true)
+            .border(.secondary)
+            .frame(width: 300)
+            
+            Button("Submit") {}
+            .buttonStyle(.borderedProminent)
+            .tint(.black)
+        }
+        
+        
     }
 }
 

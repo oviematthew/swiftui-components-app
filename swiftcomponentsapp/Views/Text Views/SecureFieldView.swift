@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct SecureFieldView: View {
+    @State private var password: String = "password"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("SecureField View")
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .padding()
+                .bold()
+            
+            
+                   Text("Enter your password:")
+                       .padding(10)
+                       .foregroundColor(.white)
+                       .background(.black)
+                   
+                   SecureField("Password", text: $password)
+                       .textFieldStyle(RoundedBorderTextFieldStyle())
+                       .padding()
+               }
+               .padding()
     }
 }
 

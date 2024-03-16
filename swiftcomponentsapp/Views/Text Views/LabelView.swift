@@ -9,7 +9,15 @@ import SwiftUI
 
 struct LabelView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Label View")
+            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            .padding()
+            .bold()
+        
+        Label("Just Some Servers", systemImage: "server.rack")
+            .padding()
+            .background(.black)
+            .foregroundColor(.white)
     }
 }
 

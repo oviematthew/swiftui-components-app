@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct TextView: View {
+    var name: String = "Matthew Ovie Enamuotor"
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Text View")
+            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            .padding()
+            .bold()
+        
+        Text("Hi there, I am \(name)")
+            .foregroundColor(.white)
+            .font(.callout)
+            .padding()
+            .background(.black)
     }
 }
 

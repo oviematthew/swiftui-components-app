@@ -9,7 +9,14 @@ import SwiftUI
 
 struct ImageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Image View")
+            .font(.title)
+            .padding()
+            .bold()
+        
+        
+        Image(systemName: "figure")
+            .font(.system(size: 50))
     }
 }
 

@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct StepperView: View {
+    @State var count: Int = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Text("Stepper View")
+            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            .padding()
+            .bold()
+        
+    
+        Stepper("Stepper Value: \(count)", value: $count, in: 0...5)
+            .padding()
     }
 }
 

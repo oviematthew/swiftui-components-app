@@ -24,7 +24,7 @@ final class ComponentStore {
         Component(name: "Text", icon: "pencil.and.scribble", linkText: "swiftui/text", section: "Text Input / Output", destination: AnyView(TextView())),
         Component(name: "Label", icon: "tag", linkText: "swiftui/label", section: "Text Input / Output", destination: AnyView(LabelView())),
         Component(name: "TextField", icon: "highlighter", linkText: "swiftui/textfield", section: "Text Input / Output", destination: AnyView(TextFieldView())),
-        Component(name: "SecureField",  icon: "text.viewfinder", linkText: "swiftui/securefield", section: "Text Input / Output", destination: AnyView(SecureFieldView())),
+        Component(name: "SecureField",  icon: "rectangle.and.pencil.and.ellipsis", linkText: "swiftui/securefield", section: "Text Input / Output", destination: AnyView(SecureFieldView())),
         Component(name: "TextArea", icon: "square.and.pencil", linkText: "appkit/nsaccessibility/role/1533503-textarea", section: "Text Input / Output", destination: AnyView(TextAreaView())),
         Component(name: "Image", icon: "photo", linkText: "swiftui/image", section: "Text Input / Output", destination: AnyView(ImageView())),
         
