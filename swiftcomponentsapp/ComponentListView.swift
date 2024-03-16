@@ -8,62 +8,32 @@
 import SwiftUI
 
 struct ComponentListView: View {
+    @StateObject var viewModel: ComponentsListViewModel = ComponentsListViewModel()
+    
     var body: some View {
-        NavigationStack {
-            List {
-                Section("Text Input / Output") {
-                    NavigationLink(destination: TextView()) {
-                            Image(systemName: "pencil.and.scribble")
-                                .foregroundColor(.blue)
-                            Text("Text")
+            NavigationStack {
+                List {
+                    ForEach(viewModel.sectionNames, id: \.self) { section in
+                        Section(header: Text(section)) {
+                            ForEach(viewModel.filterComponents(for: section)) { component in
+                                NavigationLink(destination: component.destination) {
+                                        Image(systemName: component.icon)
+                                            .foregroundColor(.blue)
+                                        Text(component.name)
+                                }
+                            }
+                        }
                     }
-                    NavigationLink(destination: LabelView()) {
-                            Image(systemName: "tag")
-                                .foregroundColor(.blue)
-                            Text("Label")
-                    }
-                    NavigationLink(destination: TextFieldView()) {
-                            Image(systemName: "square.and.pencil")
-                                .foregroundColor(.blue)
-                            Text("TextField")
-                    }
-                    NavigationLink(destination: TextFieldView()) {
-                            Image(systemName: "square.and.pencil")
-                                .foregroundColor(.blue)
-                            Text("SecureField")
-                    }
-                    NavigationLink(destination: TextFieldView()) {
-                            Image(systemName: "square.and.pencil")
-                                .foregroundColor(.blue)
-                            Text("TextArea")
-                    }
-                    NavigationLink(destination: TextFieldView()) {
-                            Image(systemName: "square.and.pencil")
-                                .foregroundColor(.blue)
-                            Text("Image")
-                    }
-
-
-
-                    
                 }
-                
-                Section("Controls") {
-                    
+                .navigationTitle(viewModel.navTitle)
+                .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search")
+                .onChange(of: viewModel.searchText) {
+                    viewModel.searchComponents()
                 }
-                Section("Container Views") {
-                    
-                }
-                Section("List") {
-                    
-                }
-                
-                
             }
-            .navigationTitle("Components")
         }
     }
-}
+
 
 #Preview {
     ComponentListView()
