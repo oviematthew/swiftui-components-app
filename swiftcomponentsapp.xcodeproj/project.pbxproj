@@ -38,6 +38,12 @@
 		EEA95CB12BA5BB8F0010ABB8 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CB02BA5BB8F0010ABB8 /* NavigationView.swift */; };
 		EEA95CB32BA5BBA40010ABB8 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CB22BA5BBA40010ABB8 /* AlertView.swift */; };
 		EEA95CB52BA5BBB00010ABB8 /* SheetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CB42BA5BBB00010ABB8 /* SheetsView.swift */; };
+		EEA95CB72BA5C0C20010ABB8 /* PlainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CB62BA5C0C20010ABB8 /* PlainView.swift */; };
+		EEA95CB92BA5C0CE0010ABB8 /* InsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CB82BA5C0CE0010ABB8 /* InsetView.swift */; };
+		EEA95CBB2BA5C0DC0010ABB8 /* GroupedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CBA2BA5C0DC0010ABB8 /* GroupedView.swift */; };
+		EEA95CBD2BA5C0EA0010ABB8 /* InsetGroupedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CBC2BA5C0EA0010ABB8 /* InsetGroupedView.swift */; };
+		EEA95CBF2BA5C0F70010ABB8 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CBE2BA5C0F70010ABB8 /* SidebarView.swift */; };
+		EEA95CC12BA5C5580010ABB8 /* ComponentsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CC02BA5C5580010ABB8 /* ComponentsDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +79,12 @@
 		EEA95CB02BA5BB8F0010ABB8 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		EEA95CB22BA5BBA40010ABB8 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		EEA95CB42BA5BBB00010ABB8 /* SheetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetsView.swift; sourceTree = "<group>"; };
+		EEA95CB62BA5C0C20010ABB8 /* PlainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainView.swift; sourceTree = "<group>"; };
+		EEA95CB82BA5C0CE0010ABB8 /* InsetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetView.swift; sourceTree = "<group>"; };
+		EEA95CBA2BA5C0DC0010ABB8 /* GroupedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedView.swift; sourceTree = "<group>"; };
+		EEA95CBC2BA5C0EA0010ABB8 /* InsetGroupedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGroupedView.swift; sourceTree = "<group>"; };
+		EEA95CBE2BA5C0F70010ABB8 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		EEA95CC02BA5C5580010ABB8 /* ComponentsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,7 @@
 				EEA95C862BA59F960010ABB8 /* ComponentsListViewModel.swift */,
 				EEA95C562BA5930D0010ABB8 /* ContentView.swift */,
 				EEA95C842BA59F410010ABB8 /* ComponentListView.swift */,
+				EEA95CC02BA5C5580010ABB8 /* ComponentsDetailView.swift */,
 				EEA95C582BA5930E0010ABB8 /* Assets.xcassets */,
 				EEA95C5A2BA5930E0010ABB8 /* Preview Content */,
 			);
@@ -142,6 +155,11 @@
 		EEA95C682BA597A40010ABB8 /* List Views */ = {
 			isa = PBXGroup;
 			children = (
+				EEA95CB62BA5C0C20010ABB8 /* PlainView.swift */,
+				EEA95CB82BA5C0CE0010ABB8 /* InsetView.swift */,
+				EEA95CBA2BA5C0DC0010ABB8 /* GroupedView.swift */,
+				EEA95CBC2BA5C0EA0010ABB8 /* InsetGroupedView.swift */,
+				EEA95CBE2BA5C0F70010ABB8 /* SidebarView.swift */,
 			);
 			path = "List Views";
 			sourceTree = "<group>";
@@ -266,9 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA95CC12BA5C5580010ABB8 /* ComponentsDetailView.swift in Sources */,
 				EEA95C872BA59F960010ABB8 /* ComponentsListViewModel.swift in Sources */,
 				EEA95C722BA599950010ABB8 /* TextView.swift in Sources */,
 				EEA95C8B2BA5A5420010ABB8 /* TextAreaView.swift in Sources */,
+				EEA95CB72BA5C0C20010ABB8 /* PlainView.swift in Sources */,
+				EEA95CBD2BA5C0EA0010ABB8 /* InsetGroupedView.swift in Sources */,
 				EEA95C7D2BA59C970010ABB8 /* LabelView.swift in Sources */,
 				EEA95CA92BA5BB500010ABB8 /* HStackView.swift in Sources */,
 				EEA95C952BA5A6CB0010ABB8 /* LinkView.swift in Sources */,
@@ -280,6 +301,7 @@
 				EEA95C972BA5A6D90010ABB8 /* SliderView.swift in Sources */,
 				EEA95C992BA5A6E40010ABB8 /* StepperView.swift in Sources */,
 				EEA95CB12BA5BB8F0010ABB8 /* NavigationView.swift in Sources */,
+				EEA95CB92BA5C0CE0010ABB8 /* InsetView.swift in Sources */,
 				EEA95C9D2BA5A6FE0010ABB8 /* PickerView.swift in Sources */,
 				EEA95C572BA5930D0010ABB8 /* ContentView.swift in Sources */,
 				EEA95C8D2BA5A5880010ABB8 /* SecureFieldView.swift in Sources */,
@@ -293,6 +315,8 @@
 				EEA95CA32BA5A7290010ABB8 /* ProgressView.swift in Sources */,
 				EEA95CAF2BA5BB7E0010ABB8 /* FormView.swift in Sources */,
 				EEA95CB32BA5BBA40010ABB8 /* AlertView.swift in Sources */,
+				EEA95CBB2BA5C0DC0010ABB8 /* GroupedView.swift in Sources */,
+				EEA95CBF2BA5C0F70010ABB8 /* SidebarView.swift in Sources */,
 				EEA95CAD2BA5BB700010ABB8 /* ZStackView.swift in Sources */,
 				EEA95CA72BA5A90E0010ABB8 /* ComponentStore.swift in Sources */,
 			);

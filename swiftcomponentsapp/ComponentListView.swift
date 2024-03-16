@@ -16,10 +16,10 @@ struct ComponentListView: View {
                     ForEach(viewModel.sectionNames, id: \.self) { section in
                         Section(header: Text(section)) {
                             ForEach(viewModel.filterComponents(for: section)) { component in
-                                NavigationLink(destination: component.destination) {
-                                        Image(systemName: component.icon)
-                                            .foregroundColor(.blue)
-                                        Text(component.name)
+                                NavigationLink(destination: ComponentsDetailView(component: component)) {
+                                    Image(systemName: component.icon)
+                                        .foregroundColor(.blue)
+                                    Text(component.name)
                                 }
                             }
                         }

@@ -50,6 +50,11 @@ final class ComponentStore {
         Component(name: "Sheets", icon: "newspaper.fill", section: "Container Views", destination: AnyView(SheetsView())),
         
         //List
+        Component(name: "PlainView", icon: "list.clipboard", section: "List", destination: AnyView(PlainView())),
+        Component(name: "InsetView", icon: "rectangle.center.inset.filled", section: "List", destination: AnyView(InsetView())),
+        Component(name: "GroupedView", icon: "rectangle.3.group", section: "List", destination: AnyView(GroupedView())),
+        Component(name: "InsetGroupedView", icon: "rectangle.3.group.fill", section: "List", destination: AnyView(InsetGroupedView())),
+        Component(name: "SidebarView", icon: "sidebar.squares.left", section: "List", destination: AnyView(SidebarView())),
     ]
     
     static var testStore: ComponentStore = ComponentStore(components: mockData)
