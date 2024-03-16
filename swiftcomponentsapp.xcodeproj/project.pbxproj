@@ -28,7 +28,7 @@
 		EEA95C9D2BA5A6FE0010ABB8 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95C9C2BA5A6FE0010ABB8 /* PickerView.swift */; };
 		EEA95C9F2BA5A70C0010ABB8 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95C9E2BA5A70C0010ABB8 /* DatePickerView.swift */; };
 		EEA95CA12BA5A71A0010ABB8 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CA02BA5A71A0010ABB8 /* ColorPickerView.swift */; };
-		EEA95CA32BA5A7290010ABB8 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CA22BA5A7290010ABB8 /* ProgressView.swift */; };
+		EEA95CA32BA5A7290010ABB8 /* ProgressViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CA22BA5A7290010ABB8 /* ProgressViewView.swift */; };
 		EEA95CA52BA5A8130010ABB8 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CA42BA5A8130010ABB8 /* Component.swift */; };
 		EEA95CA72BA5A90E0010ABB8 /* ComponentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CA62BA5A90E0010ABB8 /* ComponentStore.swift */; };
 		EEA95CA92BA5BB500010ABB8 /* HStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95CA82BA5BB500010ABB8 /* HStackView.swift */; };
@@ -70,7 +70,7 @@
 		EEA95C9C2BA5A6FE0010ABB8 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		EEA95C9E2BA5A70C0010ABB8 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		EEA95CA02BA5A71A0010ABB8 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
-		EEA95CA22BA5A7290010ABB8 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		EEA95CA22BA5A7290010ABB8 /* ProgressViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewView.swift; sourceTree = "<group>"; };
 		EEA95CA42BA5A8130010ABB8 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		EEA95CA62BA5A90E0010ABB8 /* ComponentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentStore.swift; sourceTree = "<group>"; };
 		EEA95CA82BA5BB500010ABB8 /* HStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackView.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 				EEA95C9C2BA5A6FE0010ABB8 /* PickerView.swift */,
 				EEA95C9E2BA5A70C0010ABB8 /* DatePickerView.swift */,
 				EEA95CA02BA5A71A0010ABB8 /* ColorPickerView.swift */,
-				EEA95CA22BA5A7290010ABB8 /* ProgressView.swift */,
+				EEA95CA22BA5A7290010ABB8 /* ProgressViewView.swift */,
 			);
 			path = "Control Views";
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 				EEA95C852BA59F410010ABB8 /* ComponentsListView.swift in Sources */,
 				EEA95C9B2BA5A6F30010ABB8 /* ToggleView.swift in Sources */,
 				EEA95C552BA5930D0010ABB8 /* swiftcomponentsappApp.swift in Sources */,
-				EEA95CA32BA5A7290010ABB8 /* ProgressView.swift in Sources */,
+				EEA95CA32BA5A7290010ABB8 /* ProgressViewView.swift in Sources */,
 				EEA95CAF2BA5BB7E0010ABB8 /* FormView.swift in Sources */,
 				EEA95CB32BA5BBA40010ABB8 /* AlertView.swift in Sources */,
 				EEA95CBB2BA5C0DC0010ABB8 /* GroupedView.swift in Sources */,

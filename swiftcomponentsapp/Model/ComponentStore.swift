@@ -38,7 +38,7 @@ final class ComponentStore {
         Component(name: "Picker", icon: "pencil", linkText: "swiftui/picker",section: "Controls", destination: AnyView(PickerView())),
         Component(name: "DatePicker", icon: "calendar.badge.plus", linkText: "swiftui/datepicker", section: "Controls", destination: AnyView(DatePickerView())),
         Component(name: "ColorPicker", icon: "paintpalette", linkText: "swiftui/colorpicker", section: "Controls", destination: AnyView(ColorPickerView())),
-        Component(name: "ProgressView", icon: "lines.measurement.horizontal", linkText: "swiftui/progressview", section: "Controls", destination: AnyView(ProgressView())),
+        Component(name: "ProgressView", icon: "lines.measurement.horizontal", linkText: "swiftui/progressview", section: "Controls", destination: AnyView(ProgressViewView())),
         
         //Container Views
         Component(name: "HStack", icon: "square.stack.3d.down.forward", linkText: "swiftui/hstack", section: "Container Views", destination: AnyView(HStackView())),
