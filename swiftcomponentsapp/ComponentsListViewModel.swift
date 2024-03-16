@@ -18,7 +18,11 @@ class ComponentsListViewModel: ObservableObject {
         self.store = store
         self.navTitle = navTitle
     }
-
+    
+    
+    var listData: [Component]{
+        return searchText.isEmpty ? store.components : searchResults
+    }
 
     var sectionNames: [String] {
         // Custom order for sections
@@ -30,15 +34,22 @@ class ComponentsListViewModel: ObservableObject {
         }
     }
 
-    //Display items
+    // Display items
     func filterComponents(for section: String? = nil) -> [Component] {
-        let filteredComponents = searchText.isEmpty ? store.components : searchResults
+        let filteredComponents: [Component]
+        if searchText.isEmpty {
+            filteredComponents = store.components
+        } else {
+            filteredComponents = searchResults // This should correctly use searchResults if there's text in searchText
+        }
+        
         if let section = section {
             return filteredComponents.filter { $0.section == section }
         } else {
             return filteredComponents
         }
     }
+
     
     //search for component
     func searchComponents() {

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SafariServices
 
 struct ComponentsDetailView: View {
     let component: Component
@@ -35,9 +36,14 @@ struct ComponentsDetailView: View {
     }
     
     private func openDocumentation() {
-           guard let url = URL(string: "https://developer.apple.com/documentation/\(component.linkText)") else { return }
-           UIApplication.shared.open(url)
-       }
+        guard let url = URL(string: "https://developer.apple.com/documentation/\(component.linkText)") else { return }
+        
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            let safariViewController = SFSafariViewController(url: url)
+            windowScene.windows.first?.rootViewController?.present(safariViewController, animated: true, completion: nil)
+        }
+    }
+
 }
 
 #Preview {
