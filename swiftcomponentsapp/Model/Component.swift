@@ -16,3 +16,4 @@ struct Component: Identifiable{
     let section: String
     let destination: AnyView
 }
+

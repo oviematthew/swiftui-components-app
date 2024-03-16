@@ -40,7 +40,7 @@ class ComponentsListViewModel: ObservableObject {
         if searchText.isEmpty {
             filteredComponents = store.components
         } else {
-            filteredComponents = searchResults // This should correctly use searchResults if there's text in searchText
+            filteredComponents = searchResults
         }
         
         if let section = section {
@@ -54,7 +54,6 @@ class ComponentsListViewModel: ObservableObject {
     //search for component
     func searchComponents() {
         searchResults = store.components.filter({ $0.name.localizedCaseInsensitiveContains(searchText) })
-        
         }
 }
 
