@@ -9,9 +9,69 @@ import SwiftUI
 
 struct HStackView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("HStack View")
+                .font(.title)
+                .padding()
+                .bold()
+            
+            ScrollView(.horizontal) {
+                HStack(spacing: 20) {
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundColor(.red)
+                        .frame(width: 150, height: 150)
+                    
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundColor(.green)
+                        .frame(width: 150, height: 150)
+                    
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundColor(.blue)
+                        .frame(width: 150, height: 150)
+                    
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundColor(.red)
+                        .frame(width: 150, height: 150)
+                    
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundColor(.green)
+                        .frame(width: 150, height: 150)
+                    
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundColor(.blue)
+                        .frame(width: 150, height: 150)
+                    
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundColor(.blue)
+                        .frame(width: 150, height: 150)
+                    
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundColor(.red)
+                        .frame(width: 150, height: 150)
+                    
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundColor(.green)
+                        .frame(width: 150, height: 150)
+                    
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundColor(.blue)
+                        .frame(width: 150, height: 150)
+                    
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundColor(.green)
+                        .frame(width: 150, height: 150)
+                    
+                    RoundedRectangle(cornerRadius: 25.0)
+                        .foregroundColor(.blue)
+                        .frame(width: 150, height: 150)
+                }
+                .padding()
+            }
+            .padding()
+        }
     }
 }
+
 
 #Preview {
     HStackView()
