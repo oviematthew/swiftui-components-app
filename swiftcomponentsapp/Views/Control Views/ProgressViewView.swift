@@ -8,38 +8,26 @@
 import SwiftUI
 
 struct ProgressViewView: View {
-    var body: some View {
-        VStack(spacing: 30) {
-            ProgressViewView()
-            LinearProgressDemoView()
-            DateRelativeProgressDemoView()
-        }
-        .padding()
-    }
-}
-
-struct LinearProgressDemoView: View {
-    @State private var progress = 0.5
-
-    var body: some View {
-        VStack {
-            ProgressView(value: progress)
-            Button("More") { progress += 0.05 }
-        }
-    }
-}
-
-struct DateRelativeProgressDemoView: View {
-    let workoutDateRange = Date()...Date().addingTimeInterval(5*60)
-
-
-    var body: some View {
-         ProgressView(timerInterval: workoutDateRange) {
-             Text("Workout")
-         }
-         .tint(.green)
-    }
-}
+    @State private var progress = 0.2
+       
+       var body: some View {
+           VStack {
+               Text("ProgressView")
+                   .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                   .padding()
+                   .bold()
+               
+               ProgressView(value: progress)
+                   .padding()
+                   .tint(.black)
+               
+               Button("More") { progress += 0.05 }
+                   .padding()
+                   .buttonStyle(.borderedProminent)
+                   .tint(.black)
+           }
+       }
+   }
 
 
 #Preview {

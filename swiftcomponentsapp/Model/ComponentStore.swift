@@ -50,11 +50,11 @@ final class ComponentStore {
         Component(name: "Sheets", icon: "newspaper.fill", linkText: "swiftui/presentationadaptation/sheet", section: "Container Views", destination: AnyView(SheetsView())),
         
         //List
-        Component(name: "PlainView", icon: "list.clipboard", linkText: "swiftui/list", section: "List", destination: AnyView(PlainView())),
-        Component(name: "InsetView", icon: "rectangle.center.inset.filled", linkText: "swiftui/list", section: "List", destination: AnyView(InsetView())),
-        Component(name: "GroupedView", icon: "rectangle.3.group", linkText: "swiftui/list", section: "List", destination: AnyView(GroupedView())),
-        Component(name: "InsetGroupedView", icon: "rectangle.3.group.fill", linkText: "swiftui/list", section: "List", destination: AnyView(InsetGroupedView())),
-        Component(name: "SidebarView", icon: "sidebar.squares.left", linkText: "swiftui/list", section: "List", destination: AnyView(SidebarView())),
+        Component(name: "PlainView", icon: "list.clipboard", linkText: "swiftui/plainliststyle", section: "List", destination: AnyView(PlainView())),
+        Component(name: "InsetView", icon: "rectangle.center.inset.filled", linkText: "swiftui/insetliststyle", section: "List", destination: AnyView(InsetView())),
+        Component(name: "GroupedView", icon: "rectangle.3.group", linkText: "swiftui/groupedliststyle", section: "List", destination: AnyView(GroupedView())),
+        Component(name: "InsetGroupedView", icon: "rectangle.3.group.fill", linkText: "swiftui/insetgroupedliststyle", section: "List", destination: AnyView(InsetGroupedView())),
+        Component(name: "SidebarView", icon: "sidebar.squares.left", linkText: "swiftui/sidebarliststyle", section: "List", destination: AnyView(SidebarView())),
     ]
     
     static var testComponentStore: ComponentStore = ComponentStore(components: componentData)
