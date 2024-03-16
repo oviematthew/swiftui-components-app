@@ -9,14 +9,16 @@ import Foundation
 import SwiftUI
 
 class ComponentsListViewModel: ObservableObject {
-    var componentStore: ComponentStore
+    var store: ComponentStore
     var searchText: String = ""
-    var navTitle: String = "Components"
+    var navTitle: String = ""
     var searchResults: [Component] = []
-
-    init(componentStore: ComponentStore = ComponentStore.shared) {
-        self.componentStore = componentStore
+    
+    init(store: ComponentStore = ComponentStore.testComponentStore, navTitle: String = "Components") {
+        self.store = store
+        self.navTitle = navTitle
     }
+
 
     var sectionNames: [String] {
         // Custom order for sections
@@ -24,13 +26,13 @@ class ComponentsListViewModel: ObservableObject {
         
         // Filter sections based on the custom order
         return customOrder.filter { orderSection in
-            componentStore.components.contains(where: { $0.section == orderSection })
+            store.components.contains(where: { $0.section == orderSection })
         }
     }
 
     //Display items
     func filterComponents(for section: String? = nil) -> [Component] {
-        let filteredComponents = searchText.isEmpty ? componentStore.components : searchResults
+        let filteredComponents = searchText.isEmpty ? store.components : searchResults
         if let section = section {
             return filteredComponents.filter { $0.section == section }
         } else {
@@ -38,13 +40,10 @@ class ComponentsListViewModel: ObservableObject {
         }
     }
     
-    
+    //search for component
     func searchComponents() {
-        if searchText.isEmpty {
-            searchResults = []
-        } else {
-            searchResults = componentStore.components.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
+        searchResults = store.components.filter({ $0.name.localizedCaseInsensitiveContains(searchText) })
+        
         }
-    }
 }
 

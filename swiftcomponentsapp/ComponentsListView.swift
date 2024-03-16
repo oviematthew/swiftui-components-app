@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ComponentListView: View {
+struct ComponentsListView: View {
     @StateObject var viewModel: ComponentsListViewModel = ComponentsListViewModel()
     
     var body: some View {
@@ -17,9 +17,7 @@ struct ComponentListView: View {
                         Section(header: Text(section)) {
                             ForEach(viewModel.filterComponents(for: section)) { component in
                                 NavigationLink(destination: ComponentsDetailView(component: component)) {
-                                    Image(systemName: component.icon)
-                                        .foregroundColor(.blue)
-                                    Text(component.name)
+                                    ComponentsRowView(component: component)
                                 }
                             }
                         }
@@ -36,5 +34,5 @@ struct ComponentListView: View {
 
 
 #Preview {
-    ComponentListView()
+    ComponentsListView()
 }

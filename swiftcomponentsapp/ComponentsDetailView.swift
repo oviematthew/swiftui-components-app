@@ -35,11 +35,11 @@ struct ComponentsDetailView: View {
     }
     
     private func openDocumentation() {
-           guard let url = URL(string: "https://developer.apple.com/documentation/swiftui/\(component.name.lowercased())") else { return }
+           guard let url = URL(string: "https://developer.apple.com/documentation/\(component.linkText)") else { return }
            UIApplication.shared.open(url)
        }
 }
 
 #Preview {
-    ComponentsDetailView(component: Component(name: "Text", icon: "pencil.and.scribble", section: "Text Input / Output", destination: AnyView(TextView())))
+    ComponentsDetailView(component: Component(name: "Text", icon: "pencil.and.scribble", linkText: "swiftui/text", section: "Text Input / Output", destination: AnyView(TextView())))
 }
