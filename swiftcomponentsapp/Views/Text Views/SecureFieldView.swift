@@ -18,16 +18,16 @@ struct SecureFieldView: View {
                 .bold()
             
             
-                   Text("Enter your password:")
-                       .padding(10)
-                       .foregroundColor(.white)
-                       .background(.black)
-                   
-                   SecureField("Password", text: $password)
-                       .textFieldStyle(RoundedBorderTextFieldStyle())
-                       .padding()
-               }
-               .padding()
+            Text("Enter your password:")
+                .padding(10)
+                .foregroundColor(.white)
+                .background(.black)
+            
+            SecureField("Password", text: $password)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+        }
+        .padding()
     }
 }
 

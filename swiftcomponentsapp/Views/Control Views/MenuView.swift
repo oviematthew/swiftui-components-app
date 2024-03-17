@@ -15,19 +15,19 @@ struct MenuView: View {
             .bold()
         
         Menu {
-                Button("Open in Preview", action: openInPreview)
-                    Button("Save as PDF", action: saveAsPDF)
-                } label: {
-                    Label("File Options", systemImage: "doc.fill")
-                        .foregroundColor(.black)
-                }
-            }
-        
-        func openInPreview(){
-        }
-        func saveAsPDF(){
+            Button("Open in Preview", action: openInPreview)
+            Button("Save as PDF", action: saveAsPDF)
+        } label: {
+            Label("File Options", systemImage: "doc.fill")
+                .foregroundColor(.black)
         }
     }
+    
+    func openInPreview(){
+    }
+    func saveAsPDF(){
+    }
+}
 
 
 #Preview {

@@ -21,17 +21,23 @@ struct AlertView: View {
             Button(action: {
                 isPresented = true
             }, label: {
-                Text("Show Alert")
+                Text("My Alert")
             })
             .padding()
-            
+            .foregroundColor(.white)
+            .tint(.black)
+            .buttonStyle(.borderedProminent)
             
             Button(action: {
                 isPresentedMulti = true
             }, label: {
-                Text("Show Multi-Option Alert")
+                Text("My Multi-Option Alert")
             })
-
+            .padding()
+            .foregroundColor(.white)
+            .tint(.black)
+            .buttonStyle(.borderedProminent)
+            
         }
         .alert("Alert Title", isPresented: $isPresented) {
             Button("Cancel", role: .cancel) {

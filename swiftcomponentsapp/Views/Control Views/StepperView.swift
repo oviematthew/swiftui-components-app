@@ -17,7 +17,7 @@ struct StepperView: View {
             .padding()
             .bold()
         
-    
+        
         Stepper("Stepper Value: \(count)", value: $count, in: 0...5)
             .padding()
     }

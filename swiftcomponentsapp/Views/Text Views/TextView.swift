@@ -15,11 +15,20 @@ struct TextView: View {
             .padding()
             .bold()
         
+        // Single Line
         Text("Hi there, I am \(name)")
             .foregroundColor(.white)
             .font(.callout)
             .padding()
             .background(.black)
+        
+        // Multi line
+        Text("Hello, \(name)!\nThanks for using our app. \n\nWe hope you have a great experience.")
+            .foregroundColor(.white)
+            .font(.callout)
+            .padding()
+            .background(Color.black)
+            .multilineTextAlignment(.center)
     }
 }
 

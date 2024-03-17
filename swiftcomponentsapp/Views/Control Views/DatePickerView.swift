@@ -14,8 +14,8 @@ struct DatePickerView: View {
         let startComponents = DateComponents(year: 1997, month: 1, day: 1)
         let endComponents = DateComponents(year: 1997, month: 01, day: 27, hour: 00, minute: 00, second: 00)
         return calendar.date(from:startComponents)!
-            ...
-            calendar.date(from:endComponents)!
+        ...
+        calendar.date(from:endComponents)!
     }()
     
     var body: some View {
@@ -23,7 +23,7 @@ struct DatePickerView: View {
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             .padding()
             .bold()
-            Divider()
+        Divider()
         
         DatePicker("Date Picker", selection: $date, displayedComponents: [.date])
             .padding()
@@ -43,16 +43,16 @@ struct DatePickerView: View {
     }
     
     private func formattedDate(_ date: Date) -> String {
-           let formatter = DateFormatter()
-           formatter.dateFormat = "dd-MMM-yyyy"
-           return formatter.string(from: date)
-       }
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd-MMM-yyyy"
+        return formatter.string(from: date)
+    }
     
     private func formattedDateAndTime(_ date: Date) -> String {
-           let formatter = DateFormatter()
-           formatter.dateFormat = "yyyy-MM-dd, HH:mm:ss"
-           return formatter.string(from: date)
-       }
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd, HH:mm:ss"
+        return formatter.string(from: date)
+    }
 }
 
 #Preview {

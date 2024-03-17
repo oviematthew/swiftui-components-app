@@ -12,6 +12,7 @@ struct ComponentsRowView: View {
     var component: Component
     
     var body: some View {
+        
             HStack {
                 
                 //Component Icon

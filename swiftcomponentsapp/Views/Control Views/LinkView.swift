@@ -18,9 +18,9 @@ struct LinkView: View {
             Image(systemName: "globe")
             
             Link("View My Portfolio",
-                  destination: URL(string: "https://oviematthew.com/")!)
+                 destination: URL(string: "https://oviematthew.com/")!)
             .foregroundColor(.black)
-        } 
+        }
     }
 }
 

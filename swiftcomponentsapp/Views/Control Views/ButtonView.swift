@@ -15,8 +15,8 @@ struct ButtonView: View {
             .bold()
         
         Button("Hello") {}
-        .buttonStyle(.borderedProminent)
-        .tint(.black)
+            .buttonStyle(.borderedProminent)
+            .tint(.black)
     }
 }
 

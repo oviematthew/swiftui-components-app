@@ -16,7 +16,7 @@ struct SliderView: View {
             .padding()
             .bold()
         
-        
+        // First Slider
         Text("Continuous Slider")
             .font(.title)
         
@@ -32,6 +32,8 @@ struct SliderView: View {
         .padding()
         .tint(.black)
         
+        
+        // Second Slider
         Text("Stepped Slider")
             .font(.title)
         
@@ -46,7 +48,7 @@ struct SliderView: View {
         }
         .padding()
         .tint(.black)
-
+        
     }
 }
 

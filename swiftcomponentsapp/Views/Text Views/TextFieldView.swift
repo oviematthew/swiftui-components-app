@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TextFieldView: View {
     @State private var username: String = ""
-
+    
     var body: some View {
         Text("TextField View")
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
@@ -27,8 +27,8 @@ struct TextFieldView: View {
             .frame(width: 300)
             
             Button("Submit") {}
-            .buttonStyle(.borderedProminent)
-            .tint(.black)
+                .buttonStyle(.borderedProminent)
+                .tint(.black)
         }
         
         
