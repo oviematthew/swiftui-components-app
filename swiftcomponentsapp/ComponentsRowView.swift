@@ -13,9 +13,12 @@ struct ComponentsRowView: View {
     
     var body: some View {
             HStack {
+                
+                //Component Icon
                 Image(systemName: component.icon)
                     .foregroundColor(.blue)
                 
+                //Component Label
                 Text(component.name)
             }
         

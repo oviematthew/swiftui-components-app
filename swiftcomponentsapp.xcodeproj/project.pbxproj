@@ -100,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE9131022BA6689A00F19176 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEA95C862BA59F960010ABB8 /* ComponentsListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EEA95C482BA5930D0010ABB8 = {
 			isa = PBXGroup;
 			children = (
@@ -119,11 +127,11 @@
 		EEA95C532BA5930D0010ABB8 /* swiftcomponentsapp */ = {
 			isa = PBXGroup;
 			children = (
+				EE9131022BA6689A00F19176 /* ViewModel */,
 				EEA95C772BA599C60010ABB8 /* Model */,
 				EEA95C702BA599290010ABB8 /* Views */,
 				EEA95C542BA5930D0010ABB8 /* swiftcomponentsappApp.swift */,
 				EEA95C562BA5930D0010ABB8 /* ContentView.swift */,
-				EEA95C862BA59F960010ABB8 /* ComponentsListViewModel.swift */,
 				EEA95CC22BA5E02F0010ABB8 /* ComponentsRowView.swift */,
 				EEA95C842BA59F410010ABB8 /* ComponentsListView.swift */,
 				EEA95CC02BA5C5580010ABB8 /* ComponentsDetailView.swift */,

@@ -8,17 +8,40 @@
 import SwiftUI
 
 struct ComponentsListView: View {
+    
     @StateObject var viewModel: ComponentsListViewModel = ComponentsListViewModel()
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(viewModel.sectionNames, id: \.self) { section in
-                    Section(header: Text(section)) {
-                        ForEach(viewModel.filterComponents(for: section)) { component in
-                            NavigationLink(destination: ComponentsDetailView(component: component)) {
-                                ComponentsRowView(component: component)
-                            }
+                Section(header: Text("Text Input / Output")) {
+                    ForEach(viewModel.listData.filter {$0.section == "Text Input / Output"}) { component in
+                        NavigationLink(destination: ComponentsDetailView(component: component)) {
+                            ComponentsRowView(component: component)
+                        }
+                    }
+                }
+                
+                Section(header: Text("Controls")) {
+                    ForEach(viewModel.listData.filter {$0.section == "Controls"}) { component in
+                        NavigationLink(destination: ComponentsDetailView(component: component)) {
+                            ComponentsRowView(component: component)
+                        }
+                    }
+                }
+                
+                Section(header: Text("Container Views")) {
+                    ForEach(viewModel.listData.filter {$0.section == "Container Views"}) { component in
+                        NavigationLink(destination: ComponentsDetailView(component: component)) {
+                            ComponentsRowView(component: component)
+                        }
+                    }
+                }
+                
+                Section(header: Text("List")) {
+                    ForEach(viewModel.listData.filter {$0.section == "List"}) { component in
+                        NavigationLink(destination: ComponentsDetailView(component: component)) {
+                            ComponentsRowView(component: component)
                         }
                     }
                 }
