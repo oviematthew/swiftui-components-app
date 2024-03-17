@@ -1,5 +1,7 @@
 # Swift UI Components App
 
+## This is an MVVM style built Components app, exploring various swift ui components and arrranging their separate views in a list of different sections
+
 ## Demo video
 
 <img src="./demo-gif.gif" width="200px" height= "500px" alt="Screenshot of app 2">
